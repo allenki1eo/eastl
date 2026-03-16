@@ -4,6 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-gold: var(--gold);
+  --color-gold-hover: var(--gold-hover);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-open-sans);
@@ -45,6 +47,8 @@
 }
 
 :root {
+  --gold: #c99b3e;
+  --gold-hover: #d4a84a;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

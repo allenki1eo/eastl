@@ -5,8 +5,8 @@ import Image from "next/image";
 const brands = [
   { name: "Hanson's Choice", image: "/images/6.png" },
   { name: "Hanson's Lite", image: "/images/7.png" },
-  { name: "Goldberg", image: "/images/6.png" },
-  { name: "Premium Selection", image: "/images/7.png" },
+  { name: "Goldberg", image: "/images/10.png" },
+  { name: "Diamond Rock", image: "/images/hanson2.png" },
 ];
 
 export default function FloatingBrands() {

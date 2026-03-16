@@ -24,7 +24,7 @@ const footerLinks = {
   legal: [
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Terms of Service", href: "/terms" },
-    // { name: "Cookie Policy", href: "/cookies" },
+    { name: "Cookie Policy", href: "/cookies" },
     { name: "Responsible Drinking", href: "/responsible-drinking" },
   ],
 };

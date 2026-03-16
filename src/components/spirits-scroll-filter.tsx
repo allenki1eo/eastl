@@ -263,7 +263,7 @@ export default function SpiritsScrollFilterAccordion() {
                     }`}
                   style={{ fontFamily: "var(--font-open-sans), sans-serif" }}
                 >
-                  <span className="w-1.5 md:w-2 h-1.5 md:h-2 bg-[#9fff6b] rounded-full"></span>
+                  <span className="w-1.5 md:w-2 h-1.5 md:h-2 bg-[#c99b3e] rounded-full"></span>
                   <span>{spirit.badges.category}</span>
                 </div>
                 <div
@@ -273,7 +273,7 @@ export default function SpiritsScrollFilterAccordion() {
                     }`}
                   style={{ fontFamily: "var(--font-open-sans), sans-serif" }}
                 >
-                  <span className="w-1.5 md:w-2 h-1.5 md:h-2 bg-[#9fff6b] rounded-full"></span>
+                  <span className="w-1.5 md:w-2 h-1.5 md:h-2 bg-[#c99b3e] rounded-full"></span>
                   <span>{spirit.badges.age}</span>
                 </div>
                 <div
@@ -283,21 +283,21 @@ export default function SpiritsScrollFilterAccordion() {
                     }`}
                   style={{ fontFamily: "var(--font-open-sans), sans-serif" }}
                 >
-                  <span className="w-1.5 md:w-2 h-1.5 md:h-2 bg-[#9fff6b] rounded-full"></span>
+                  <span className="w-1.5 md:w-2 h-1.5 md:h-2 bg-[#c99b3e] rounded-full"></span>
                   <span>{spirit.badges.price}</span>
                 </div>
               </div>
             </div>
 
             {/* Add Button */}
-            <div className="absolute bottom-[15px] right-[15px] md:bottom-[30px] md:right-[30px] w-7 h-7 md:w-8 md:h-8 bg-transparent border-2 border-[#9fff6b] rounded-full flex items-center justify-center cursor-pointer transition-all duration-400 z-[3]">
+            <div className="absolute bottom-[15px] right-[15px] md:bottom-[30px] md:right-[30px] w-7 h-7 md:w-8 md:h-8 bg-transparent border-2 border-[#c99b3e] rounded-full flex items-center justify-center cursor-pointer transition-all duration-400 z-[3]">
               <div className="relative w-full h-full flex items-center justify-center">
                 <span
-                  className={`absolute w-3 h-0.5 bg-[#9fff6b] transition-all duration-400 ${currentIndex === index ? "rotate-0" : ""
+                  className={`absolute w-3 h-0.5 bg-[#c99b3e] transition-all duration-400 ${currentIndex === index ? "rotate-0" : ""
                     }`}
                 ></span>
                 <span
-                  className={`absolute w-0.5 h-3 bg-[#9fff6b] transition-all duration-400 ${currentIndex === index ? "opacity-0 scale-0" : "opacity-100 scale-100"
+                  className={`absolute w-0.5 h-3 bg-[#c99b3e] transition-all duration-400 ${currentIndex === index ? "opacity-0 scale-0" : "opacity-100 scale-100"
                     }`}
                 ></span>
               </div>
