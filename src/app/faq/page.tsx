@@ -13,7 +13,7 @@ const faqData: FAQItem[] = [
   {
     category: "Products",
     question: "What types of beverages do you produce?",
-    answer: "We produce a wide range of premium beverages including lagers (Bell Lager, Nile Special, Hanson's Lite), premium spirits (Hanson's Choice Brandy, Hanson's Vodka, Diamond Rock Gin, Furaha Gin), and premium ciders (Hanson's Premium Cider). All our products are crafted to the highest quality standards."
+    answer: "We produce a wide range of premium beverages including lagers (Goldberg, Hanson's Lite, Basembi, Mbogo), premium spirits (Hanson's Choice Brandy, Hanson's Vodka, Diamond Rock Gin, Furaha Gin), and premium ciders (Hanson's Dry Crispy Apple Cider, Hanson's Premium Cider). All our products are crafted to the highest quality standards."
   },
   {
     category: "Products",
@@ -23,7 +23,7 @@ const faqData: FAQItem[] = [
   {
     category: "Products",
     question: "What is the alcohol content (ABV) of your beers and spirits?",
-    answer: "Our beers range from 4.2% to 5.6% ABV. Bell Lager is 5.0%, Nile Special is 5.6%, Hanson's Lite is 4.2%, and Hanson's Premium Cider is 4.8%. Our spirits range from 37.5% to 43% ABV, with vodka at 37.5%, brandy at 40%, and gin at 40-43%."
+    answer: "Our beers range from 4.2% to 5.6% ABV. Goldberg Malt Lager is 5.6%, Mbogo Lager is 5.5%, Basembi Lager is 5.0%, Hanson's Dry Crispy Apple Cider is 5.0%, Hanson's Premium Cider is 4.8%, and Hanson's Lite is 4.2%. Our spirits range from 37.5% to 43% ABV, with vodka at 37.5%, brandy at 40%, and gin at 40-43%."
   },
   {
     category: "Quality & Production",

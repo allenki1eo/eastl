@@ -16,7 +16,7 @@ export default function TermsOfServicePage() {
             className="text-lg text-white/70 max-w-2xl mx-auto"
             style={{ fontFamily: "var(--font-open-sans), sans-serif" }}
           >
-            Last Updated: October 2025
+            Last Updated: March 2026
           </p>
         </div>
       </section>

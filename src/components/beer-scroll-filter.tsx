@@ -25,7 +25,7 @@ const beers: Beer[] = [
   {
     id: 1,
     brand: "Hanson's Dry",
-    name: "Hanson's Dry Crsipy Apple Cider",
+    name: "Hanson's Dry Crispy Apple Cider",
     subtitle: "Premium Apple Cider Experience",
     image: "/images/8.png",
     specs: {
