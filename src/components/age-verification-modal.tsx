@@ -86,7 +86,7 @@ export default function AgeVerificationModal() {
 
         {/* Decorative Elements */}
         <div className="absolute top-0 right-0 w-32 h-32 bg-[#c99b3e]/10 rounded-full blur-3xl -z-10" />
-        <div className="absolute bottom-0 left-0 w-32 h-32 bg-fuchsia-500/10 rounded-full blur-3xl -z-10" />
+        <div className="absolute bottom-0 left-0 w-32 h-32 bg-[#c99b3e]/10 rounded-full blur-3xl -z-10" />
       </div>
     </div>
   );
