@@ -1,0 +1,114 @@
+/* ── Apply scroll-snap to <html> when this page is active ─────── */
+:global(.history-snap) {
+  scroll-snap-type: y mandatory;
+  timeline-scope: --section;
+}
+
+:global(.history-snap) body {
+  background-color: #000;
+}
+
+/* ── Hero — first snap point ───────────────────────────────────── */
+.heroSection {
+  position: relative;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+/* ── Era snap section ──────────────────────────────────────────── */
+.section {
+  height: 100dvh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  /* each section powers the --section timeline */
+  view-timeline-name: --section;
+  view-timeline-axis: block;
+}
+
+/* ── Fixed content — driven by view-timeline ───────────────────── */
+.content {
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+  background-color: #000;
+  color: white;
+  --blur: 0.45rem;
+  --contrast: 4;
+  /* zoom-scroll is the only effect */
+  animation: zoomScroll ease-in-out both;
+  animation-timeline: --section;
+  pointer-events: none;
+}
+
+.content > * {
+  pointer-events: auto;
+}
+
+/* ── Zoom scroll keyframe ──────────────────────────────────────── */
+@keyframes zoomScroll {
+  0% {
+    filter: blur(5rem);
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    filter: blur(0);
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    filter: blur(3rem);
+    transform: scale(1.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* ── Dot nav ───────────────────────────────────────────────────── */
+.dotNav {
+  position: fixed;
+  right: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 60;
+  list-style: none;
+  margin: 0;
+  padding: 0.45rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.48rem;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+}
+
+.dotNav a {
+  display: block;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: background 0.15s;
+}
+
+.dotNav a:hover {
+  background: #c99b3e;
+}
+
+/* ── Hide the root layout footer on this page only ─────────────── */
+/*
+  The root layout always renders <Footer />. We hide it here because
+  our-history/layout.tsx renders its own footer outside the fixed zone.
+*/
+:global(body:has(#history-scroll-zone) > footer) {
+  display: none;
+}
